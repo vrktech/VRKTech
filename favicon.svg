@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="vrkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded Base Badge -->
+  <rect width="64" height="64" rx="16" fill="#0f172a" />
+  
+  <!-- Subtle Border Glow -->
+  <rect width="62" height="62" x="1" y="1" rx="15" fill="none" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Monogram & Tech Glyphs -->
+  <g fill="none" stroke="url(#vrkGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left Bracket < -->
+    <path d="M19 23 L11 32 L19 41" />
+    
+    <!-- Central Stylized V -->
+    <path d="M26 23 L32 41 L38 23" stroke="#ffffff" stroke-width="5.5" />
+    
+    <!-- Right Bracket > -->
+    <path d="M45 23 L53 32 L45 41" />
+  </g>
+</svg>

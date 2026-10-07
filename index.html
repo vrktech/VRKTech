@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>VRK Tech | Karthick R. — Freelance Software &amp; Full-Stack Web Developer</title>
+  <meta name="title" content="VRK Tech | Karthick R. — Freelance Software &amp; Full-Stack Web Developer">
+  <meta name="description" content="Karthick R. (VRK Tech) — Independent freelance software &amp; web developer since 2005. Specializing in PHP/MySQL, Elementor &amp; WordPress, desktop software (VB6, C# WinForms), and automated web scraping.">
+  <meta name="keywords" content="Karthick R, VRK Tech, freelance software developer, full stack web developer, PHP MySQL developer, CodeIgniter developer, WordPress Elementor developer, VB6 legacy maintenance, C# WinForms developer, web scraping specialist, data extraction, Thiruvallur Chennai developer, freelance programmer India">
+  <meta name="author" content="Karthick R.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vrktech.com/">
+  <meta name="theme-color" content="#3F51B5">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vrktech.com/">
+  <meta property="og:site_name" content="VRK Tech">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="VRK Tech | Karthick R. — Freelance Software &amp; Full-Stack Web Developer">
+  <meta property="og:description" content="Over 20 years of hands-on technical expertise delivering custom web platforms, database applications, automated scraping systems, and stable desktop software.">
+  <meta property="og:image" content="https://vrktech.com/apple-touch-icon.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://vrktech.com/">
+  <meta name="twitter:title" content="VRK Tech | Karthick R. — Freelance Software &amp; Full-Stack Web Developer">
+  <meta name="twitter:description" content="Over 20 years of hands-on technical expertise delivering custom web platforms, database applications, automated scraping systems, and stable desktop software.">
+  <meta name="twitter:image" content="https://vrktech.com/apple-touch-icon.png">
+
+  <!-- Favicons and Web App Manifest (Local Relative Paths) -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <!-- Structured Data JSON-LD (Schema.org Person & ProfessionalService) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://vrktech.com/#person",
+        "name": "Karthick R.",
+        "alternateName": "VRK Tech",
+        "url": "https://vrktech.com/",
+        "jobTitle": "Freelance Software & Web Developer",
+        "email": "mailto:karthick@vrktech.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Thiruvallur / Chennai",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "India"
+        },
+        "sameAs": [
+          "https://www.upwork.com/freelancers/~0138150855576ba105",
+          "https://github.com/vrktech",
+          "https://www.linkedin.com/in/vrktech/",
+          "https://www.facebook.com/vrktech"
+        ],
+        "knowsAbout": [
+          "PHP", "MySQL", "CodeIgniter 4", "WordPress", "Elementor", 
+          "HTML5", "CSS3", "JavaScript", "Visual Basic 6", "C# WinForms", 
+          "Web Scraping", "Python", "Data Extraction", "DNS & Web Hosting"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://vrktech.com/#organization",
+        "name": "VRK Tech",
+        "url": "https://vrktech.com/",
+        "logo": "https://vrktech.com/favicon.svg",
+        "image": "https://vrktech.com/apple-touch-icon.png",
+        "founder": { "@id": "https://vrktech.com/#person" },
+        "foundingDate": "2005",
+        "priceRange": "$$",
+        "telephone": "",
+        "email": "karthick@vrktech.com",
+        "description": "Independent freelance software and web development services specializing in PHP/MySQL, Elementor, WordPress, desktop software, and data automation."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Typography: Space Grotesk & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Local Tailwind CSS Stylesheet -->
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+</head>
+<body class="font-sans text-slate-800 antialiased bg-[#FAF9FE] selection:bg-brand-500 selection:text-white">
+
+  <!-- Fixed Header & Navigation -->
+  <header class="fixed top-0 left-0 right-0 h-[74px] bg-white/95 backdrop-blur-md border-b border-indigo-100 z-50 flex items-center shadow-xs">
+    <div class="w-full max-w-content mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group" aria-label="VRK Tech Home">
+        <img src="./favicon.svg" alt="VRK Tech Logo" class="w-9 h-9 rounded-lg shadow-sm transition-transform duration-200 group-hover:-rotate-3 group-hover:scale-105" width="36" height="36">
+        <div class="text-xl font-bold tracking-tight text-slate-900">
+          VRK<span class="text-brand-600">Tech</span>
+        </div>
+      </a>
+
+      <!-- Mobile Nav Hamburger -->
+      <button id="mobileNavToggle" class="lg:hidden text-slate-700 hover:text-brand-600 focus:outline-none p-2 text-2xl" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <!-- Desktop Nav Menu -->
+      <nav id="navMenu" class="hidden lg:flex items-center gap-8">
+        <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors py-1">About</a>
+        <a href="#skills" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors py-1">Skills</a>
+        <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors py-1">Services</a>
+        <a href="#showcase" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors py-1">MyFolioVault</a>
+        <a href="#experience" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors py-1">Feedback</a>
+        <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors py-1">Contact</a>
+        <a href="#contact" class="btn-gradient text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+          Hire Me
+        </a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu Drawer (revealed by JS) -->
+    <div id="mobileDrawer" class="hidden lg:hidden absolute top-[74px] left-0 right-0 bg-white border-b border-indigo-100 p-6 flex-col gap-4 shadow-xl">
+      <a href="#about" class="mobile-nav-link text-slate-700 font-semibold py-2">About</a>
+      <a href="#skills" class="mobile-nav-link text-slate-700 font-semibold py-2">Skills</a>
+      <a href="#services" class="mobile-nav-link text-slate-700 font-semibold py-2">Services</a>
+      <a href="#showcase" class="mobile-nav-link text-slate-700 font-semibold py-2">MyFolioVault</a>
+      <a href="#experience" class="mobile-nav-link text-slate-700 font-semibold py-2">Feedback</a>
+      <a href="#contact" class="mobile-nav-link text-slate-700 font-semibold py-2">Contact</a>
+      <a href="#contact" class="btn-gradient text-white text-center font-semibold py-2.5 rounded-full mt-2">Hire Me</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO (Material Indigo Soft Tinted Gradient) -->
+    <section id="hero" class="pt-32 pb-20 md:pt-36 md:pb-24 bg-gradient-to-b from-[#FAF9FE] via-[#E8EAF6]/60 to-[#F1F3FB] border-b border-indigo-100">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Hero Main Content (7 cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold tracking-wide">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Independent Freelancer Since 2005
+            </div>
+
+            <!-- Hero Title set to exactly 3rem on desktop with text-gradient on "Engineered to Perform" -->
+            <h1 class="text-3xl sm:text-4xl lg:text-[3rem] font-extrabold text-slate-900 leading-[1.2] tracking-tight">
+              Reliable Web &amp; Software Solutions <span class="text-gradient">Engineered to Perform</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl font-normal">
+              Hi, I’m <strong class="text-slate-900 font-bold">Karthick R.</strong> Over 20 years of hands-on technical expertise delivering custom web platforms, database applications, automated scraping systems, and stable desktop software.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#showcase" class="btn-gradient text-white font-bold px-7 py-3.5 rounded-full shadow-md hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                Explore MyFolioVault <span>&rarr;</span>
+              </a>
+              <a href="#contact" class="bg-white border border-slate-300 text-slate-800 hover:bg-slate-50 hover:border-slate-400 font-bold px-7 py-3.5 rounded-full shadow-xs transition-all transform hover:-translate-y-0.5">
+                Get in Touch
+              </a>
+            </div>
+
+            <!-- Experience Highlights Counter -->
+            <div class="grid grid-cols-3 gap-6 pt-8 mt-6 border-t border-indigo-200/60">
+              <div>
+                <span class="block text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">20+</span>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500">Years Experience</span>
+              </div>
+              <div>
+                <span class="block text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">100%</span>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500">Hands-on Execution</span>
+              </div>
+              <div>
+                <span class="block text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">Global</span>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500">Client Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Profile Card (5 cols) -->
+          <div class="lg:col-span-5">
+            <div class="bg-white border border-indigo-100 rounded-2xl p-7 sm:p-8 shadow-xl shadow-indigo-900/5 relative overflow-hidden">
+              <div class="flex items-center gap-4 pb-6 mb-6 border-b border-slate-100">
+                <div class="w-16 h-16 rounded-2xl btn-gradient flex items-center justify-center text-white font-extrabold text-2xl shadow-md">
+                  KR
+                </div>
+                <div>
+                  <h2 class="text-xl font-bold text-slate-900">Karthick R.</h2>
+                  <div class="text-brand-600 font-semibold text-sm">Full-Stack &amp; Software Developer</div>
+                  <div class="text-slate-400 text-xs mt-0.5 flex items-center gap-1 font-mono">📍 Thiruvallur / Chennai, India</div>
+                </div>
+              </div>
+
+              <ul class="space-y-3.5 mb-6 text-sm font-medium text-slate-700">
+                <li class="flex items-center gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>
+                  Full-Stack Web (PHP, MySQL, CodeIgniter 4)
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>
+                  WordPress &amp; Elementor Website Design
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>
+                  Desktop Software (VB6, C# WinForms)
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>
+                  Web Scraping, Automation &amp; Data Research
+                </li>
+              </ul>
+
+              <!-- Upwork Banner Link with Local SVG -->
+              <div class="bg-[#14a800]/10 border border-[#14a800]/30 rounded-xl p-4 flex items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-lg bg-[#14a800] text-white flex items-center justify-center p-1.5 shadow-xs">
+                    <img src="./upwork.svg" alt="Upwork" class="w-full h-full" width="24" height="24">
+                  </div>
+                  <div>
+                    <div class="text-slate-900 font-bold text-sm">Top Rated on Upwork</div>
+                    <div class="text-[#14a800] font-semibold text-xs">Trusted by international clients</div>
+                  </div>
+                </div>
+                <a href="https://www.upwork.com/freelancers/~0138150855576ba105" target="_blank" rel="noopener noreferrer" class="text-[#14a800] hover:text-[#0d7300] font-bold text-xs uppercase tracking-wider flex items-center gap-1">
+                  Profile &nearr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME (Crisp Pure White Background) -->
+    <section id="about" class="py-24 bg-white border-b border-slate-200">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        
+        <div class="text-center w-full mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200 mb-3">About Me</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight w-full">20+ Years in Freelancing &amp; Development</h2>
+          <p class="text-slate-600 text-base sm:text-lg w-full mx-auto mt-3">Continuous delivery, rock-solid engineering, and customer satisfaction since 2005.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div class="lg:col-span-6 space-y-5 text-slate-600 text-base sm:text-lg leading-relaxed">
+            <p>
+              I am a self-employed software and web development professional based in Tamil Nadu, India. Since stepping into the online freelancing arena in 2005, I have partnered with businesses, agencies, and entrepreneurs globally to deliver robust applications, automate manual workflows, and solve complex data challenges.
+            </p>
+            <p>
+              My background bridges the gap between classic computer software and the modern web. Whether building native Windows desktop utilities, database-driven web platforms in PHP and MySQL, customizable WordPress/Elementor websites, or automated web crawlers, I focus on clean code, dependable uptime, and practical business value.
+            </p>
+            <p>
+              Clients value my punctuality, transparent communication, and meticulous attention to requirements. Every project is executed with direct personal accountability.
+            </p>
+          </div>
+
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-6 hover:border-brand-500 hover:shadow-lg transition-all">
+              <div class="text-3xl mb-3">🛡️</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-1.5">Pragmatic &amp; Proven</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Building software designed for real-world resilience, high maintainability, and clean architecture.</p>
+            </div>
+
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-6 hover:border-brand-500 hover:shadow-lg transition-all">
+              <div class="text-3xl mb-3">⚡</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-1.5">End-to-End Delivery</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">From schema design and requirements planning to backend logic, frontend UI, and server deployment.</p>
+            </div>
+
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-6 hover:border-brand-500 hover:shadow-lg transition-all">
+              <div class="text-3xl mb-3">🔍</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-1.5">Precision Data Ops</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">High-volume data scraping, structured mining, market research, and catalog management.</p>
+            </div>
+
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-6 hover:border-brand-500 hover:shadow-lg transition-all">
+              <div class="text-3xl mb-3">🤝</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-1.5">Long-Term Trust</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Two decades of positive client relationships built on clear timelines, integrity, and quality results.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS (Soft Indigo-Slate Alternating Background) -->
+    <section id="skills" class="py-24 bg-[#EEF0F9] border-b border-indigo-100">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        
+        <div class="text-center w-full mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200 mb-3">Core Competencies</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight w-full">Technical Skillset &amp; Technologies</h2>
+          <p class="text-slate-600 text-base sm:text-lg w-full mx-auto mt-3">A comprehensive toolbox developed and refined across decades of active commercial and personal projects.</p>
+        </div>
+
+        <!-- 3 Columns Per Row Layout (2 rows of 3) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Card 1: Web Frontend -->
+          <div class="bg-white border border-indigo-100 rounded-2xl p-7 shadow-xs hover:shadow-lg hover:border-brand-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 pb-4 mb-5 border-b border-slate-100">
+                <span class="text-4xl sm:text-[2.6rem] select-none leading-none">🎨</span>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Web Frontend Development</h3>
+                  <p class="text-xs text-slate-400">Responsive UI, performance &amp; modern standards</p>
+                </div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">HTML5 &amp; CSS3</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">jQuery &amp; JavaScript</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Responsive Web Design</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Bootstrap Framework</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">React</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Angular</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & Database -->
+          <div class="bg-white border border-indigo-100 rounded-2xl p-7 shadow-xs hover:shadow-lg hover:border-brand-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 pb-4 mb-5 border-b border-slate-100">
+                <span class="text-4xl sm:text-[2.6rem] select-none leading-none">⚙️</span>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Backend &amp; Database</h3>
+                  <p class="text-xs text-slate-400">Application logic, data architecture &amp; APIs</p>
+                </div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">PHP (OOP &amp; MVC)</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">CodeIgniter 4 Framework</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">MySQL &amp; MariaDB</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Relational Schema Design</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Query Optimization &amp; Indexing</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">RESTful API Integration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: CMS & Web Builders -->
+          <div class="bg-white border border-indigo-100 rounded-2xl p-7 shadow-xs hover:shadow-lg hover:border-brand-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 pb-4 mb-5 border-b border-slate-100">
+                <span class="text-4xl sm:text-[2.6rem] select-none leading-none">🌐</span>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">CMS &amp; Web Builders</h3>
+                  <p class="text-xs text-slate-400">Elementor, site building &amp; optimization</p>
+                </div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Elementor Page Builder</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">WordPress Website Design</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">WooCommerce Store Setup</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Site Migration, Speed &amp; Maintenance</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Custom Theme &amp; Plugin Customization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Domains & Hosting Ops -->
+          <div class="bg-white border border-indigo-100 rounded-2xl p-7 shadow-xs hover:shadow-lg hover:border-brand-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 pb-4 mb-5 border-b border-slate-100">
+                <span class="text-4xl sm:text-[2.6rem] select-none leading-none">🚀</span>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Domains &amp; Hosting Ops</h3>
+                  <p class="text-xs text-slate-400">Infrastructure setup, security &amp; maintenance</p>
+                </div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Domain Registration &amp; DNS Setup</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Web Hosting Setup (cPanel / VPS)</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Installing SSL Certificates (HTTPS)</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Server &amp; Website Maintenance</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">DNS Records (A, CNAME, MX, TXT)</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Email Accounts &amp; Webmail Config</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Desktop Software -->
+          <div class="bg-white border border-indigo-100 rounded-2xl p-7 shadow-xs hover:shadow-lg hover:border-brand-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 pb-4 mb-5 border-b border-slate-100">
+                <span class="text-4xl sm:text-[2.6rem] select-none leading-none">💻</span>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Desktop Software</h3>
+                  <p class="text-xs text-slate-400">Native Windows development &amp; legacy systems</p>
+                </div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Visual Basic 6 (VB6)</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">C# WinForms (.NET)</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Visual Studio IDE</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Windows POS &amp; Billing Systems</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Legacy Code Migration &amp; Maintenance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Automation & Data Ops -->
+          <div class="bg-white border border-indigo-100 rounded-2xl p-7 shadow-xs hover:shadow-lg hover:border-brand-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 pb-4 mb-5 border-b border-slate-100">
+                <span class="text-4xl sm:text-[2.6rem] select-none leading-none">🤖</span>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Automation &amp; Data Ops</h3>
+                  <p class="text-xs text-slate-400">Web harvesting, data pipelines &amp; assistance</p>
+                </div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Python Scripting</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Web Scraping &amp; Crawling</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Data Extraction &amp; Cleaning</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Market &amp; Online Research</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">E-Commerce Product Entry</span>
+                </div>
+                <div class="flex items-center gap-3 py-1 group cursor-default">
+                  <span class="w-2 h-2 rounded-full bg-brand-600 group-hover:scale-125 transition-transform"></span>
+                  <span class="text-sm font-medium text-slate-700 group-hover:font-bold group-hover:text-slate-900 transition-all">Virtual Technical Assistance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: SERVICES (What I Offer - Icons with No Background and Increased Size) -->
+    <section id="services" class="py-24 bg-white border-b border-slate-200">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        
+        <div class="text-center w-full mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200 mb-3">What I Offer</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight w-full">Specialized Freelance Services</h2>
+          <p class="text-slate-600 text-base sm:text-lg w-full mx-auto mt-3">Tailored engineering and digital assistance to help your business scale efficiently.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Service 1: Large Unconstrained Icon without Background -->
+          <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-7 hover:border-brand-500 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-[2.6rem] mb-4 select-none leading-none">🌐</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Responsive Web Design &amp; Development</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">Pixel-perfect, mobile-friendly websites and web applications built using HTML5, CSS3, Bootstrap, and jQuery with rapid loading speeds.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-indigo-100">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">HTML5 / CSS3</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Bootstrap</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Responsive</span>
+            </div>
+          </div>
+
+          <!-- Service 2: Large Unconstrained Icon without Background -->
+          <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-7 hover:border-brand-500 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-[2.6rem] mb-4 select-none leading-none">🧩</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">WordPress &amp; Elementor Website Design</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">Modern, responsive website design and development using WordPress and the Elementor Page Builder, landing page creation, WooCommerce store setup, site speed optimization, and ongoing maintenance.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-indigo-100">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Elementor</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">WordPress</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Landing Pages</span>
+            </div>
+          </div>
+
+          <!-- Service 3: Large Unconstrained Icon without Background -->
+          <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-7 hover:border-brand-500 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-[2.6rem] mb-4 select-none leading-none">🗄️</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">PHP &amp; MySQL Web Applications</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">Dynamic backends, database schema creation, custom business dashboards, CRM modules, and CodeIgniter-driven applications with secure relational database integration.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-indigo-100">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">PHP</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">MySQL</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">CodeIgniter</span>
+            </div>
+          </div>
+
+          <!-- Service 4: Large Unconstrained Icon without Background -->
+          <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-7 hover:border-brand-500 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-[2.6rem] mb-4 select-none leading-none">🖥️</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Desktop Software Engineering</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">Development of business desktop applications in C# WinForms, plus specialized expertise in supporting, refactoring, and maintaining legacy Visual Basic 6 applications.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-indigo-100">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">C# WinForms</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">VB6</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Visual Studio</span>
+            </div>
+          </div>
+
+          <!-- Service 5: Large Unconstrained Icon without Background -->
+          <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-7 hover:border-brand-500 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-[2.6rem] mb-4 select-none leading-none">🕷️</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Web Scraping &amp; Data Automation</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">Automated extraction of web content, multi-page data harvesting, directory scrapers, and data formatting into clean CSV, JSON, or SQL formats.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-indigo-100">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Python</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Web Scraping</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Automation</span>
+            </div>
+          </div>
+
+          <!-- Service 6: Large Unconstrained Icon without Background -->
+          <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-7 hover:border-brand-500 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-[2.6rem] mb-4 select-none leading-none">🛡️</div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Domain, Hosting &amp; SSL Management</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">Complete setup and maintenance of your web infrastructure: domain registration, DNS record routing, cPanel/VPS hosting configuration, Let's Encrypt / Commercial SSL installation, and routine server updates.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-indigo-100">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Domain Setup</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">Web Hosting</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 font-medium">SSL Certificates</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: FEATURED SHOWCASE (Soft Indigo Alternating Canvas) -->
+    <section id="showcase" class="py-24 bg-gradient-to-b from-[#EEF0F9] via-white to-[#EEF0F9] border-b border-indigo-100">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        
+        <div class="text-center w-full mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200 mb-3">Featured Project</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight w-full">MyFolioVault — Indian Investment Portfolio Tracker</h2>
+          <p class="text-slate-600 text-base sm:text-lg w-full mx-auto mt-3">A self-hosted, 100% offline personal wealth management and statutory tax compliance application.</p>
+        </div>
+
+        <!-- Featured Project Card -->
+        <div class="bg-white border border-indigo-100 rounded-3xl p-8 sm:p-12 shadow-xl shadow-indigo-900/5 relative overflow-hidden">
+          
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-200">
+              🚀 Live Application &amp; Open Source
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 font-mono">
+              ✨ Interactive Demo Ready
+            </span>
+          </div>
+
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+            MyFolioVault
+          </h3>
+
+          <!-- FULL-WIDTH PROJECT TAGLINE -->
+          <p class="text-slate-700 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 w-full font-normal">
+            Tailored specifically for the Indian financial market, MyFolioVault runs completely privately on a local machine with zero external CDN dependencies and zero tracking. It tracks multi-broker holdings, computes accurate weighted average pricing (WAP), models Indian capital gains, and manages statutory tax nuances across Equities, REITs/InvITs, Sovereign Gold Bonds (SGBs), ETFs, Mutual Funds, and NPS Tier I &amp; II.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-2.5 mb-8">
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200">PHP 8.1+</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200">CodeIgniter 4</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200">MySQL / MariaDB</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200">Bootstrap 5.3.3 (Offline)</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200">100% Air-Gapped / Zero-CDN</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200">MIT License</span>
+          </div>
+
+          <!-- Feature Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+                <span>📈</span> Equities &amp; Corporate Actions
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">NSE/BSE multi-exchange support with automated bonus dilution, stock split multipliers, rights issue cost integration, and dividend ledgers.</p>
+            </div>
+
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+                <span>🏢</span> REITs &amp; InvITs Taxation
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Specialized 4-component distribution ledger: dividend income, slab interest, capital repayment cost basis reduction, and other income.</p>
+            </div>
+
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+                <span>🥇</span> Sovereign Gold Bonds &amp; Debt
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Gram-based SGB holdings with maturity tracking and Indian IT Act Section 47(viic) capital gains tax exemption logic upon RBI redemption.</p>
+            </div>
+
+            <div class="bg-[#F6F7FD] border border-indigo-100 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+                <span>💼</span> Mutual Funds &amp; NPS PRAN
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">SIP and lump-sum investment ledger, ELSS 3-year statutory lock-in tracking, and PRAN-level multi-pension fund manager asset allocations.</p>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="https://myfoliovault.in/" target="_blank" rel="noopener noreferrer" class="btn-gradient text-white font-bold px-8 py-3.5 rounded-full shadow-md hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+              Launch Live Demo &nearr;
+            </a>
+            <a href="https://github.com/vrktech/MyFolioVault" target="_blank" rel="noopener noreferrer" class="bg-white border border-slate-300 text-slate-800 hover:bg-slate-50 hover:border-slate-400 font-bold px-8 py-3.5 rounded-full shadow-xs transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+              View on GitHub &nearr;
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CLIENT TRACK RECORD / UPWORK (Crisp White Background) -->
+    <section id="experience" class="py-24 bg-white border-b border-slate-200">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        
+        <div class="text-center w-full mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-200 mb-3">Track Record</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight w-full">Client Satisfaction &amp; Freelance Delivery</h2>
+          <p class="text-slate-600 text-base sm:text-lg w-full mx-auto mt-3">A reputation earned through attention to detail, timely delivery, and consistent communication.</p>
+        </div>
+
+        <div class="bg-[#F6F7FD] border border-indigo-100 rounded-3xl p-8 sm:p-10 shadow-lg">
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-slate-200/70">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-[#14a800] text-white flex items-center justify-center p-2 shadow-xs">
+                <img src="./upwork.svg" alt="Upwork" class="w-full h-full" width="24" height="24">
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Karthick R. — Top Rated Freelancer</h3>
+                <p class="text-xs sm:text-sm text-slate-500 font-mono">Data Entry | Web Research | Web Scraping | WordPress | PHP</p>
+              </div>
+            </div>
+
+            <a href="https://www.upwork.com/freelancers/~0138150855576ba105" target="_blank" rel="noopener noreferrer" class="bg-[#14a800] hover:bg-[#0d7300] text-white text-xs sm:text-sm font-bold px-5 py-2.5 rounded-full transition-all flex items-center gap-1.5 shadow-xs">
+              Visit Upwork Profile &nearr;
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <div class="text-amber-400 text-sm mb-3 font-mono">★★★★★ 5.0</div>
+                <p class="text-slate-700 text-sm italic leading-relaxed mb-4">"Karthick did an exceptional job. Fast turnaround, meticulous attention to detail, and great communication throughout. Will definitely hire again!"</p>
+              </div>
+              <div class="text-xs font-semibold text-slate-400 pt-3 border-t border-slate-100">Data Extraction &amp; Web Research Project</div>
+            </div>
+
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <div class="text-amber-400 text-sm mb-3 font-mono">★★★★★ 5.0</div>
+                <p class="text-slate-700 text-sm italic leading-relaxed mb-4">"Very dependable and committed professional. Handled large volumes of catalog data with zero errors and met all project milestones on schedule."</p>
+              </div>
+              <div class="text-xs font-semibold text-slate-400 pt-3 border-t border-slate-100">E-Commerce Product Entry &amp; Catalog Management</div>
+            </div>
+
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <div class="text-amber-400 text-sm mb-3 font-mono">★★★★★ 5.0</div>
+                <p class="text-slate-700 text-sm italic leading-relaxed mb-4">"Excellent communication and problem-solving skills. Delivered exactly what was required for our web setup without any friction."</p>
+              </div>
+              <div class="text-xs font-semibold text-slate-400 pt-3 border-t border-slate-100">WordPress &amp; Web Development Task</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT (Alternating Indigo Canvas with Interactive Form) -->
+    <section id="contact" class="py-24 bg-[#EEF0F9]">
+      <div class="w-full max-w-content mx-auto px-6 sm:px-8">
+        
+        <div class="text-center w-full mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200 mb-3">Get in Touch</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight w-full">Let’s Discuss Your Next Project</h2>
+          <p class="text-slate-600 text-base sm:text-lg w-full mx-auto mt-3">Have a project in mind, need custom web/desktop development, or require data assistance? Reach out directly!</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+          
+          <!-- Contact Info Left (5 cols) -->
+          <div class="lg:col-span-5 bg-white border border-indigo-100 rounded-3xl p-8 sm:p-10 flex flex-col justify-between shadow-xs">
+            <div>
+              <h3 class="text-2xl font-bold text-slate-900 mb-3">Contact Information</h3>
+              <p class="text-slate-600 text-base leading-relaxed mb-8">
+                I am available for freelance contracts, custom development projects, and ongoing technical support.
+              </p>
+
+              <div class="space-y-4 mb-8">
+                <!-- Email with Official Mail SVG -->
+                <a href="mailto:karthick@vrktech.com" class="flex items-center gap-4 p-4 rounded-xl bg-[#F6F7FD] border border-indigo-100 hover:border-brand-500 hover:shadow-md transition-all text-slate-800 group">
+                  <div class="w-11 h-11 rounded-lg bg-indigo-100 text-brand-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Direct Email</span>
+                    <span class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">karthick@vrktech.com</span>
+                  </div>
+                </a>
+
+                <!-- Upwork with Official Upwork Green SVG -->
+                <a href="https://www.upwork.com/freelancers/~0138150855576ba105" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-[#F6F7FD] border border-indigo-100 hover:border-[#14a800] hover:shadow-md transition-all text-slate-800 group">
+                  <div class="w-11 h-11 rounded-lg bg-[#14a800] text-white flex items-center justify-center p-2 shadow-xs group-hover:scale-105 transition-transform">
+                    <img src="./upwork.svg" alt="Upwork" class="w-full h-full" width="24" height="24">
+                  </div>
+                  <div>
+                    <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Upwork Profile</span>
+                    <span class="text-base font-bold text-slate-900 group-hover:text-[#14a800] transition-colors">Karthick R. on Upwork</span>
+                  </div>
+                </a>
+
+                <!-- GitHub with Official GitHub Octocat SVG -->
+                <a href="https://github.com/vrktech" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-[#F6F7FD] border border-indigo-100 hover:border-slate-800 hover:shadow-md transition-all text-slate-800 group">
+                  <div class="w-11 h-11 rounded-lg bg-slate-100 text-slate-900 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">GitHub Profile</span>
+                    <span class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">github.com/vrktech</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Social Links with Official SVGs & Brand Colors -->
+            <div>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Connect on Social Media</h4>
+              <div class="flex items-center gap-3">
+                <!-- LinkedIn (#0A66C2) -->
+                <a href="https://www.linkedin.com/in/vrktech/" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-[#F6F7FD] border border-indigo-100 hover:border-[#0A66C2] hover:bg-[#0A66C2] text-[#0A66C2] hover:text-white flex items-center justify-center transition-all shadow-xs group" title="LinkedIn">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+
+                <!-- Facebook (#1877F2) -->
+                <a href="https://www.facebook.com/vrktech" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-[#F6F7FD] border border-indigo-100 hover:border-[#1877F2] hover:bg-[#1877F2] text-[#1877F2] hover:text-white flex items-center justify-center transition-all shadow-xs group" title="Facebook">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                  </svg>
+                </a>
+
+                <!-- GitHub (#181717) -->
+                <a href="https://github.com/vrktech" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-[#F6F7FD] border border-indigo-100 hover:border-slate-900 hover:bg-slate-900 text-slate-800 hover:text-white flex items-center justify-center transition-all shadow-xs group" title="GitHub">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Form Right (7 cols) -->
+          <div class="lg:col-span-7 bg-white border border-indigo-100 rounded-3xl p-8 sm:p-10 shadow-lg">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">Send a Quick Message</h3>
+            
+            <form id="contactForm" class="space-y-5">
+              <div>
+                <label for="clientName" class="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
+                <input type="text" id="clientName" class="w-full px-4 py-3 rounded-xl bg-[#F6F7FD] border border-indigo-100 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div>
+                <label for="clientEmail" class="block text-sm font-semibold text-slate-700 mb-2">Your Email Address</label>
+                <input type="email" id="clientEmail" class="w-full px-4 py-3 rounded-xl bg-[#F6F7FD] border border-indigo-100 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div>
+                <label for="projectType" class="block text-sm font-semibold text-slate-700 mb-2">Service of Interest</label>
+                <select id="projectType" class="w-full px-4 py-3 rounded-xl bg-[#F6F7FD] border border-indigo-100 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                  <option value="Web Development (PHP/MySQL/HTML5)">Web Development (PHP / MySQL / HTML5)</option>
+                  <option value="WordPress / Elementor Development">WordPress &amp; Elementor Development</option>
+                  <option value="Domain, Web Hosting & SSL Setup">Domain, Web Hosting &amp; SSL Setup</option>
+                  <option value="Desktop Software (VB6 / C# WinForms)">Desktop Software (VB6 / C# WinForms)</option>
+                  <option value="Web Scraping & Data Extraction">Web Scraping &amp; Data Extraction</option>
+                  <option value="Data Entry & Virtual Assistance">Data Entry &amp; Virtual Assistance</option>
+                  <option value="Other Project Consultation">Other Project / General Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="clientMessage" class="block text-sm font-semibold text-slate-700 mb-2">Project Details</label>
+                <textarea id="clientMessage" rows="4" class="w-full px-4 py-3 rounded-xl bg-[#F6F7FD] border border-indigo-100 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all resize-y" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="w-full btn-gradient text-white font-bold py-3.5 px-6 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 text-base flex items-center justify-center gap-2">
+                Send Message &rarr;
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer in Deep Indigo -->
+  <footer class="bg-[#1A237E] text-indigo-200 py-10 border-t border-indigo-900">
+    <div class="w-full max-w-content mx-auto px-6 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-sm">
+        &copy; 2005 &ndash; 2026 <strong class="text-white">VRK Tech</strong> (Karthick R.). All rights reserved.
+      </div>
+      <div class="flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#showcase" class="hover:text-white transition-colors">MyFolioVault</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        <a href="#hero" class="hover:text-white transition-colors">&uarr; Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification on Form Submission -->
+  <div id="toastNotice" class="fixed bottom-6 right-6 bg-emerald-600 text-white font-semibold px-6 py-3.5 rounded-2xl shadow-2xl z-50 hidden transition-all" role="alert">
+    ✓ Opening your email client to send your message to karthick@vrktech.com!
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile drawer toggle
+      const toggle = document.getElementById('mobileNavToggle');
+      const drawer = document.getElementById('mobileDrawer');
+
+      if (toggle && drawer) {
+        toggle.addEventListener('click', () => {
+          drawer.classList.toggle('hidden');
+          drawer.classList.toggle('flex');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            drawer.classList.add('hidden');
+            drawer.classList.remove('flex');
+          });
+        });
+      }
+
+      // Contact form submission
+      const form = document.getElementById('contactForm');
+      const toast = document.getElementById('toastNotice');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('clientName').value.trim();
+          const email = document.getElementById('clientEmail').value.trim();
+          const projectType = document.getElementById('projectType').value;
+          const message = document.getElementById('clientMessage').value.trim();
+
+          const subject = encodeURIComponent(`Project Inquiry: ${projectType} from ${name}`);
+          const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService Requested: ${projectType}\n\nProject Details:\n${message}\n\nSent via vrktech.com portfolio form`);
+
+          window.location.href = `mailto:karthick@vrktech.com?subject=${subject}&body=${body}`;
+
+          if (toast) {
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+              toast.classList.add('hidden');
+            }, 5000);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
